@@ -1,0 +1,112 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "type"
+    ],
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-console": "warn",
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true
+      }
+    ],
+    "no-await-in-loop": "off",
+    "no-plusplus": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "comma-dangle": "off",
+    "quote-props": "off",
+    "class-methods-use-this": "off",
+    "no-restricted-syntax": "off",
+    "prefer-destructuring": "off",
+    "no-mixed-operators": "off",
+    "camelcase": "warn",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "object-curly-newline": [
+      "warn",
+      {
+        "ObjectExpression": {
+          "consistent": true
+        },
+        "ObjectPattern": {
+          "consistent": true
+        },
+        "ImportDeclaration": {
+          "consistent": true
+        },
+        "ExportDeclaration": {
+          "consistent": true
+        }
+      }
+    ],
+    "operator-linebreak": [
+      "off",
+      "before",
+      {
+        "overrides": {
+          "?": "before",
+          ":": "before"
+        }
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 3
+      }
+    ],
+    "padded-blocks": "off",
+    "no-use-before-define": [
+      "warn",
+      {
+        "functions": false,
+        "classes": true,
+        "variables": true
+      }
+    ],
+    "yoda": "off",
+    "dot-notation": "off",
+    "no-continue": "off",
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  }
+}
